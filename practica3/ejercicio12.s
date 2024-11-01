@@ -9,6 +9,8 @@ main:
     xor %eax, %eax          # %eax lo inicializamos en 0, para hacer la suma
     movl length, %ecx      # Cargamos el largo de la lista
     lea list, %rdi         # Cargamos la dirección de la lista en %rdi
+    call suma_loop
+    ret
 
 suma_loop:
     addl (%rdi), %eax      # Sumar el valor actual a la lista
@@ -17,5 +19,4 @@ suma_loop:
 
     # La suma total ahora está en %eax 
     movl %eax, %edi        # Mover la suma a %edi para usarla como código de salida
-    movl $60, %eax         # Código de syscall para exit
-    syscall                 # Llamar al sistema para salir
+    ret
