@@ -14,10 +14,9 @@ movl $0x3fc00000, %edi             # edi = 0x3fc00000
 movl %esi, (%rdx)
 retq
 
-
-
-# Etiqueta  DirMem   ValAlm
-# a         
-# b
-# c
-# str
+# a)
+# Etiqueta  DirMem      ValAlm
+# a         0x404004     -1
+# b         0x404006     0xaa
+# c         0x404008     1,5
+# str       0x40400c    "Hola mundo\n"
