@@ -5,8 +5,8 @@
 main:                    # Inicio de la función 'main'
 
 # ----------1)a)
-# movq $1, %rax          # Mueve el valor 1 al registro %rax
-# sal $31, %rax          # Desplaza a la izquierda el valor en %rax por 31 bits
+movq $1, %rax          # Mueve el valor 1 al registro %rax
+sal $31, %rax          # Desplaza a la izquierda el valor en %rax por 31 bits
 
 # ----------1)b)
 
