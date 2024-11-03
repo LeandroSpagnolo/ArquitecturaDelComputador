@@ -17,7 +17,15 @@ retq
 # a)
 # Etiqueta  DirMem      ValAlm
 # a         0x404004     -1
-# b         0x404006     0xaa
+# b         0x404006     0xaa, 0x63
+# c         0x404008     1,5
+# str       0x40400c    "Hola mundo\n"
+
+
+# c)
+# Etiqueta  DirMem      ValAlm
+# a         0x404004     0x486f6c61 
+# b         0x404006     0xaa, 0x63
 # c         0x404008     1,5
 # str       0x40400c    "Hola mundo\n"
 
